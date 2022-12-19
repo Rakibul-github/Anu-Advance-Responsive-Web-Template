@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 650px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/banner.jpg);
+    background-size: cover;
+}
+header nav .nav-link{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+header nav .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #1e1;
+}
+header nav .nav-link:focus, .nav-link:hover {
+    color: #1e1;
+}
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: #fff;
+    background-color: transparent;
+    border: var(--bs-border-width) solid #fff;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
