@@ -3,29 +3,82 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* ====header section code start====  */
 header{
-    height: 650px;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/banner.jpg);
     background-size: cover;
 }
+/* navbar code start  */
 header nav .nav-link{
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
 }
 header nav .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    color: #1e1;
+    color: #87D37C;
 }
 header nav .nav-link:focus, .nav-link:hover {
-    color: #1e1;
+    color: #87D37C;
 }
 .navbar-toggler {
-    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-    font-size: var(--bs-navbar-toggler-font-size);
-    line-height: 1;
     color: #fff;
-    background-color: transparent;
     border: var(--bs-border-width) solid #fff;
-    border-radius: var(--bs-navbar-toggler-border-radius);
-    transition: var(--bs-navbar-toggler-transition);
 }
+/* carousel code start  */
+.carousel-item h1{
+    display: inline-block;
+    padding: 2.5rem 1.5rem;
+    border: 2px solid #fff;
+}
+.carousel-item h1 span{
+    color: #87D37C;
+}
+.carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    opacity: 1;
+    transition: .6s all;
+}
+.carousel-indicators .active {
+    background: #87D37C;
+}
+/* mobile screen code start  */
+@media (min-width:0px) and (max-width:564px) {
+    .carousel-item h2{
+        font-size: 24px;
+    }
+    .carousel-item h1{
+        font-size: 30px;
+    }
+    .carousel-item h3{
+        font-size: 20px;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 15px;
+        height: 15px;
+    }
+}
+/* medium screen code start  */
+@media (min-width:565px) and (max-width:875px) {
+    .carousel-item h2{
+        font-size: 35px;
+    }
+    .carousel-item h1{
+        font-size: 45px;
+    }
+    .carousel-item h3{
+        font-size: 28px;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 24px;
+        height: 24px;
+    }
+}
+/* carousel code end  */
+/* ====header section code end====  */
