@@ -1,8 +1,20 @@
+/* common code start  */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.t-justify{
+    text-align: justify;
+}
+/* common code end  */
+
 /* ====header section code start====  */
 header{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/banner.jpg);
@@ -25,15 +37,15 @@ header nav .nav-link:focus, .nav-link:hover {
     border: var(--bs-border-width) solid #fff;
 }
 /* carousel code start  */
-.carousel-item h1{
+header .carousel-item h1{
     display: inline-block;
     padding: 2.5rem 1.5rem;
     border: 2px solid #fff;
 }
-.carousel-item h1 span{
+header .carousel-item h1 span{
     color: #87D37C;
 }
-.carousel-indicators [data-bs-target] {
+header .carousel-indicators [data-bs-target] {
     width: 30px;
     height: 30px;
     padding: 0;
@@ -45,40 +57,60 @@ header nav .nav-link:focus, .nav-link:hover {
     opacity: 1;
     transition: .6s all;
 }
-.carousel-indicators .active {
+header .carousel-indicators .active {
     background: #87D37C;
 }
 /* mobile screen code start  */
 @media (min-width:0px) and (max-width:564px) {
-    .carousel-item h2{
+    header .carousel-item h2{
         font-size: 24px;
     }
-    .carousel-item h1{
+    header .carousel-item h1{
         font-size: 30px;
     }
-    .carousel-item h3{
+    header .carousel-item h3{
         font-size: 20px;
     }
-    .carousel-indicators [data-bs-target] {
+    header .carousel-indicators [data-bs-target] {
         width: 15px;
         height: 15px;
     }
 }
 /* medium screen code start  */
 @media (min-width:565px) and (max-width:875px) {
-    .carousel-item h2{
+    header .carousel-item h2{
         font-size: 35px;
     }
-    .carousel-item h1{
+    header .carousel-item h1{
         font-size: 45px;
     }
-    .carousel-item h3{
+    header .carousel-item h3{
         font-size: 28px;
     }
-    .carousel-indicators [data-bs-target] {
+    header .carousel-indicators [data-bs-target] {
         width: 24px;
         height: 24px;
     }
 }
 /* carousel code end  */
 /* ====header section code end====  */
+
+/* about section code start  */
+.about .content-block i,
+.about .content-block h2{
+    transition: .7s all;
+}
+.about .content-block:hover i,
+.about .content-block:hover h2{
+    color: #87D37C;
+    cursor: pointer;
+}
+.about .content-block p{
+    font-size: 18px;
+}
+@media (min-width:0px) and (max-width:565px) {
+    .about .content-block p{
+        font-size: 16px;
+    }
+}
+/* about section code end  */
