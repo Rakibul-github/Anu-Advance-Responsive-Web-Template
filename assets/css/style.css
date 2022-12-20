@@ -10,6 +10,11 @@ a{
 li{
     list-style: none;
 }
+img{
+    display: block;
+    width: 100%;
+    height: fit-content;
+}
 .t-justify{
     text-align: justify;
 }
@@ -114,3 +119,45 @@ header .carousel-indicators .active {
     }
 }
 /* about section code end  */
+.services{
+    display: block;
+    background-color: #e1e1e1;
+}
+.services .services-block{
+    position: relative;
+    overflow: hidden;
+}
+.services .services-block .overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    transition: .7s all;
+}
+.services .services-block:hover .overlay{
+    left: 0;
+}
+.services .services-block .overlay a{
+    font-size: 18px;
+    margin-right: 15px;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s all;
+}
+.services .services-block .overlay a:hover{
+    background: #87D37C;
+    border: 2px solid #fff;
+}
