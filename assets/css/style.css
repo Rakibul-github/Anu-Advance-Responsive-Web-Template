@@ -119,6 +119,8 @@ header .carousel-indicators .active {
     }
 }
 /* about section code end  */
+
+/* services section code start  */
 .services{
     display: block;
     background-color: #e1e1e1;
@@ -161,3 +163,51 @@ header .carousel-indicators .active {
     background: #87D37C;
     border: 2px solid #fff;
 }
+/* services section code end  */
+
+/* portfolio section code start  */
+.portfolio .nav-pills .nav-link {
+    background: #1e1e1e;
+    color: #fff;
+    border-radius: 0;
+    margin: 6px;
+    transition: .5s linear all;
+}
+.portfolio .nav-pills .nav-link:hover{
+    background: #87D37C;
+}
+.portfolio .nav-pills .nav-link.active{
+    background-color: #87D37C;
+}
+.content-block{
+    position: relative;
+    overflow: hidden;
+}
+.content-block .content-link{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: .6s linear all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-block:hover .content-link{
+    top: 0;
+}
+.content-block .content-link a{
+    color: #fff;
+    font-size: 18px;
+    transition: .5s all linear;
+    transform: scale(1);
+}
+.content-block .content-link a:hover{
+    transform: scale(1.2);
+    color: #87D37C;
+    padding: 8px;
+    background: rgba(0,0,0,0.5);
+}
+/* portfolio section code end  */
