@@ -211,3 +211,26 @@ header .carousel-indicators .active {
     background: rgba(0,0,0,0.5);
 }
 /* portfolio section code end  */
+
+/* counter section code start  */
+.counter{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/counter-bg.jpg);
+    background-size: cover;
+}
+.counter .content-block{
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    padding: 10px 0px;
+    border: 1px solid #e1e1e1;
+}
+.counter .content-block h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.counter .content-block p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+/* counter section code end  */
