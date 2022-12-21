@@ -212,25 +212,127 @@ header .carousel-indicators .active {
 }
 /* portfolio section code end  */
 
+/* pricing section code start  */
+.pricing .content-block-list{
+    background: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 25px 15px;
+    transition: .5s all;
+}
+.pricing .content-block-list:hover{
+    background: #87D37C;
+}
+/* content-block-list head code  */
+.pricing .content-block-list:hover .head{
+    background: #fff;
+    border: 5px solid transparent;
+    color: #87D37C;
+}
+.pricing .content-block-list .head{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .5s all;
+}
+.pricing .content-block-list .head h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.pricing .content-block-list .head h2 small{
+    font-size: 18px;
+}
+.pricing .content-block-list .head span{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+}
+/* content-block-list body code  */
+.pricing .content-block-list .body ul{
+    margin: 20px 0;
+    padding: 0;
+}
+.pricing .content-block-list .body ul li{
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0px;
+}
+.pricing .content-block-list .footer {
+    margin-top: 40px;
+    overflow: hidden;
+}
+.pricing .content-block-list .footer a{
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    color: #1e1e1e;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    transition: .5s all;
+}
+.pricing .content-block-list .footer a:hover{
+    color: #fff;
+    background: rgba(255,255,255,.4);
+}
+.pricing .content-block-list .footer a:hover::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -25%;
+    width: 25px;
+    height: 100%;
+    transform: skew(-25deg);
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,0.3));
+    transition: 1s linear all;
+    animation: skew 2.5s linear 1;
+}
+@keyframes skew{
+    0%{
+        left: 125%;
+    }
+    100%{
+        left: -25%;
+    }
+}
+/* pricing section code end  */
+
 /* counter section code start  */
-.counter{
+.counters{
+    /* display: block; */
+    overflow: hidden;
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/counter-bg.jpg);
     background-size: cover;
 }
-.counter .content-block{
+.counters .content-block{
     color: #fff;
     background: rgba(0,0,0,0.7);
     text-align: center;
     padding: 10px 0px;
     border: 1px solid #e1e1e1;
 }
-.counter .content-block h2{
+.counters .content-block h2{
     font-size: 3rem;
     font-weight: 600;
 }
-.counter .content-block p{
+.counters .content-block p{
     font-size: 1.2rem;
     font-weight: 400;
     margin: 0;
 }
 /* counter section code end  */
+
