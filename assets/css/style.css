@@ -143,6 +143,7 @@ header .carousel-indicators .active {
 }
 .services .services-block:hover .overlay{
     left: 0;
+    transform: rotate(360deg);
 }
 .services .services-block .overlay a{
     font-size: 18px;
@@ -162,6 +163,7 @@ header .carousel-indicators .active {
 .services .services-block .overlay a:hover{
     background: #87D37C;
     border: 2px solid #fff;
+    transform: rotate(360deg);
 }
 /* services section code end  */
 
@@ -336,3 +338,121 @@ header .carousel-indicators .active {
 }
 /* counter section code end  */
 
+/* contact us code start  */
+.contact .content-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content-block h3 a i{
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.contact .content-block h3 a{
+    color: #1e1e1e;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .5s all;
+}
+.contact .content-block h3 a:hover{
+    color: #87D37C;
+}
+/* contact us code end  */
+
+/* registation code start  */
+.registation{
+    background: #e1e1e1;
+}
+.registation .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #87D37C;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 253, 93, 0.25);
+}
+.registation .register-now{
+    background: #87D37C;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .5s all;
+    border: 1px solid transparent;
+}
+.registation .register-now:hover{
+    position: relative;
+    overflow: hidden;
+    color: #87D37C;
+    background: #fff;
+    border: 1px solid #87D37C;
+    box-shadow: 0 0 0 0.25rem rgba(13, 253, 93, 0.25);
+}
+
+.registation .register-now:hover::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -30%;
+    width: 30px;
+    height: 100%;
+    transform: skew(-25deg);
+    background: linear-gradient(rgba(60, 231, 7, 0.3),rgba(60, 231, 7, 0.3));
+    transition: 1s linear all;
+    animation: register 2.5s linear 1;
+}
+@keyframes register{
+    0%{
+        left: -30%;
+    }
+    100%{
+        left: 105%;
+    }
+}
+/* registation code end  */
+
+/* map section code start  */
+.map .bitm-map{
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+/* map section code end  */
+
+/* footer section code start  */
+footer{
+    background: #1e1e1e;
+    color: #e1e1e1;
+}
+footer p{
+    font-size: 14px;
+}
+footer p a{
+    color: #fff;
+    border-bottom: 1px solid #87D37C;
+    transition: .5s all;
+    margin-left: 5px;
+}
+footer p a:hover{
+    color: #87D37C;
+    border-bottom: 1px solid transparent;
+}
+footer .socail-links a{
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin: 0px 5px;
+    padding: 0px 5px;
+    transition: 0.5s all;
+}
+footer .socail-links a:hover{
+    color: #87D37C;
+    transform: rotate(360deg);
+}
+/* footer section code end  */
